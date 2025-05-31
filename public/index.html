@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Email Sender</title>
+  </head>
+  <body>
+    <form id="emailForm">
+      <h1>Send Email Notification</h1>
+      <label for="recipientEmail">Recipient Email</label>
+      <input type="email" id="recipientEmail" required />
+
+      <label for="recipientName">Recipient Name (Optional)</label>
+      <input type="text" id="recipientName" />
+
+      <label for="emailSubject">Subject</label>
+      <input type="text" id="emailSubject" required />
+
+      <label for="emailBody">Message Body (HTML)</label>
+      <textarea id="emailBody" rows="8" required></textarea>
+
+      <p id="statusMessage"></p>
+      <button type="submit">Send Email</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
